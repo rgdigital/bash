@@ -1,6 +1,7 @@
 # Cent OS7 Bash
 
 ### Set hostname
+**https://forum.linode.com/viewtopic.php?t=14952&p=73921**
 ```bash
 `hostnamectl set-hostname host.rgdigital.io`
 ```
