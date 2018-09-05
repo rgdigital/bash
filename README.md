@@ -38,3 +38,13 @@ Edit httpd.conf -
 `ServerName earth.rgdigital.io`
 
 Finally, go to the linode manager > Network tab, and set your reverse dns to `earth.rgdigital.io`.
+
+### Checking Apache2 config errors
+
+If you try to restar apache with -
+`sudo service apache2 restart`
+
+and you get an error, you can run -
+`sudo apache2ctl configtest`
+
+This will print out errors in your apache config upon starting the server
