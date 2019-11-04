@@ -41,10 +41,13 @@ Finally, go to the linode manager > Network tab, and set your reverse dns to `ea
 
 ### Checking Apache2 config errors
 
-If you try to restar apache with -
+If you try to restart apache with -
 `sudo service apache2 restart`
 
 and you get an error, you can run -
 `sudo apache2ctl configtest`
 
 This will print out errors in your apache config upon starting the server
+
+### Take ownership of current directory recursively with currently logged-in user
+`sudo chown -R $(id -u):$(id -g) ./`
