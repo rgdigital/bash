@@ -51,3 +51,10 @@ This will print out errors in your apache config upon starting the server
 
 ### Take ownership of current directory recursively with currently logged-in user
 `sudo chown -R $(id -u):$(id -g) ./`
+
+### Take ownership of local git repo if you get Error
+
+Error - `insufficient permission for adding an object to repository database .git/objects`
+
+`sudo chown -R $USER:$USER "$(git rev-parse --show-toplevel)/.git"`
+
